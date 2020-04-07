@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning"> 
+    <ion-title>
+      Consulta Música
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Consulta Música</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label position="stacked">Artista</ion-label>
+    <ion-input placeholder="Digite o nome do artista..." type="text" [(ngModel)]="performer"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Nome da Música</ion-label>
+    <ion-input placeholder="Digite o nome da música..." type="text" [(ngModel)]="musicName"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="findLyrics($event)">Pesquisar</ion-button>
+
+  <ion-item>
+    <ion-label position="stacked">Letra !!!</ion-label>
+    <ion-textarea placeholder="Pressione Pesquisar..." type="text" auto-grow="true" rows="5" readonly [(ngModel)]="lyric"></ion-textarea>
+  </ion-item>
+
+</ion-content>

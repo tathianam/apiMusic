@@ -1,0 +1,7 @@
+{
+  "name": "apiMusic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
